@@ -13,6 +13,10 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 p {
     font-size: 1.5rem;
 }
@@ -77,4 +81,9 @@ header > .user {
 
 .user > i {
     color: var(--main-orange);
+}
+
+.nav-header {
+    font-weight: bold;
+    color: lightgrey;
 }
