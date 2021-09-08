@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
     <title>Static Version of Music App</title>
 </head>
 <body>
     <header>
         <h1>MusCloud</h1>
-        <input type="search" name="track-search" id="search">
+        <div class="search">
+            <i class="fas fa-search fa-2x"></i>
+            <input type="search" name="track-search" id="search" placeholder="Search for songs, artists, albums, etc...">
+        </div>
         <div class="user">
-            <img src="images/default-profile.jpg" alt="My default profile">
+            <i class="fas fa-user-circle fa-3x"></i>
             <p>Username</p>
         </div>
     </header>

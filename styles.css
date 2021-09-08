@@ -1,0 +1,80 @@
+:root {
+  --main-orange: #ffcb19;
+  --main-grey: #f9f9fb;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+header > h1 {
+    flex: 1;
+    /* background-color: yellow; */
+}
+
+header > .search {
+    flex: 3;
+}
+
+header > .user {
+    flex: 1;
+    /* background-color: yellow; */
+}
+
+.search {
+    display: flex;
+    /* background: yellow; */
+    background-color: var(--main-grey);
+    border-radius: 1.5rem;
+    align-items: center;
+}
+
+.search > i {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: lightgrey;
+}
+
+.search > input {
+    flex: 1;
+    height: 4vh;
+    border: none;
+    outline: none;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+#search::placeholder{
+    color: lightgrey;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.user > i {
+    color: var(--main-orange);
+}
