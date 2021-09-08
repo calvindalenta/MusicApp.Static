@@ -27,6 +27,7 @@ header {
     height: 10vh;
     text-align: center;
     align-items: center;
+    margin: 2vh 0;
     /* background-color: red; */
 }
 
@@ -85,16 +86,19 @@ header > .user {
 
 main {
     display: flex;
+    height: 70vh;
 }
 
 main > nav {
     flex: 1;
-    height: 70vh;
+    height: 100%;
     /* background-color: red; */
 }
 
 main > .main-section {
     flex: 4;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
 }
 
 .nav-header {
@@ -102,6 +106,9 @@ main > .main-section {
     color: lightgrey;
     padding: 5%;
     margin-left: 10%;
+}
+
+.nav-header:last-of-type {
     margin-top: 10%;
 }
 
