@@ -10,6 +10,11 @@
     font-family: 'Urbanist', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -101,6 +106,11 @@ main > .main-section {
     flex: 4;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    gap: 5%;
+}
+
+.main-section h2 {
+    margin: 0 0 3% 0;
 }
 
 .nav-header {
@@ -139,4 +149,52 @@ main > .main-section {
 
 .nav-item > i {
     margin-right: 10%;
+}
+
+.card-container {
+    margin: 0 0;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+.card {
+    /* background-color: red; */
+    /* flex: 1; */
+    flex: 0 1 25%;
+    /* width: 15%; */
+    /* height: 27vh; */
+}
+
+.card-image img {
+  border-radius: 5%;
+  width: 100%;
+  height: 20vh;
+}
+
+.card-footer {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.card-text {
+    flex: 4;
+    font-weight: bold;
+    /* padding: 10px 0 0 0; */
+    /* background-color: yellow; */
+}
+
+.card-control {
+    flex: 1;
+    text-align: end;
+    margin: 0 5% 0 0;
+    color: lightgrey;
+}
+
+.track-author {
+    color: lightgrey;
+    font-size: 1.2rem;
 }
