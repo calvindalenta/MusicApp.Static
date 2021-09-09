@@ -465,20 +465,21 @@ footer {
 }
 
 /* https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider */
+
+/* Chrome */
 #volume-slider::-webkit-slider-runnable-track {
   width: 100%;
   height: 0.5vh;
   /* background: var(--main-orange); */
 }
 
-#volume-slider::-moz-range-track {
-  width: 100%;
-  height: 0.5vh;
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1vh;
+  width: 1vh;
+  border-radius: 50%;
   background: var(--main-orange);
-}
-
-#volume-slider::-ms-track {
-  background: var(--main-orange);
+  margin-top: -0.25vh;
 }
 
 /* FF */
@@ -494,29 +495,6 @@ footer {
   background-color: var(--main-grey);
 }
 
-/* IE*/
-#volume-slider::-ms-fill-lower {
-  width: 100%;
-  height: 0.5vh;
-  background-color: var(--main-grey); 
-}
-#volume-slider::-ms-fill-upper {  
-  width: 100%;
-  height: 0.5vh;
-  background-color: var(--main-orange);
-}
-
-
-#volume-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 1vh;
-  width: 1vh;
-  border-radius: 50%;
-  background: var(--main-orange);
-  margin-top: -0.25vh;
-}
-
-/* All the same stuff for Firefox */
 #volume-slider::-moz-range-thumb {
   -webkit-appearance: none;
   height: 1vh;
@@ -528,7 +506,11 @@ footer {
   border: none;
 }
 
-/* All the same stuff for IE */
+/* IE */
+#volume-slider::-ms-track {
+  background: var(--main-orange);
+}
+
 #volume-slider::-ms-thumb {
   -webkit-appearance: none;
   height: 1vh;
@@ -536,4 +518,16 @@ footer {
   border-radius: 50%;
   background: var(--main-orange);
   margin-top: -0.25vh;
+}
+
+#volume-slider::-ms-fill-lower {
+  width: 100%;
+  height: 0.5vh;
+  background-color: var(--main-grey); 
+}
+
+#volume-slider::-ms-fill-upper {  
+  width: 100%;
+  height: 0.5vh;
+  background-color: var(--main-orange);
 }
