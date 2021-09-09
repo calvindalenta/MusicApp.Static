@@ -191,6 +191,7 @@
         </div>
     </main>
 
+    <div id="progress-bar"></div>
     <footer>
         <div class="player-left">
             <img src="images/giya-kancheli-small.jpg" alt="Giya Kancheli">
@@ -209,7 +210,17 @@
             <i class="fas fa-forward fa-2x"></i>
             <i class="fas fa-random fa-2x"></i>
         </div>
-        <div class="player-right"></div>
+        <div class="player-right">
+            <div class="volume-control">
+                <i class="fas fa-volume-down fa-2x"></i>
+                <input type="range" min="1" max="100" value="30" id="volume-slider">
+            </div>
+            <div class="user-control">
+                <i class="fas fa-heart fa-2x"></i>
+                <i class="fas fa-plus fa-2x"></i>
+                <i class="fas fa-download fa-2x"></i>
+            </div>
+        </div>
     </footer>
     
 </body>

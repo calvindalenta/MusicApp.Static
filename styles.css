@@ -31,7 +31,14 @@ p {
     color: var(--main-orange);
 }
 
-.fa-redo, .fa-backward, .fa-forward, .fa-random {
+.fa-redo,
+.fa-backward,
+.fa-forward,
+.fa-random,
+.fa-volume-down,
+.fa-heart,
+.fa-plus,
+.fa-download {
     color: lightgrey;
 }
 
@@ -353,14 +360,14 @@ footer {
     bottom: 0;
     height: 12.5vh;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
 }
 
 .player-left, .player-middle, .player-right {
     flex: 1;
-    border: 3px solid lightgreen;
+    /* border: 3px solid lightgreen; */
 }
 
 .player-middle {
@@ -405,4 +412,128 @@ footer {
 .player-left-text > .description {
     color: lightgrey;
     font-size: 1.2rem;
+}
+
+.player-right {
+    display: flex;
+    margin-right: 2%;
+}
+
+.player-right > .volume-control, .player-right > .user-control {
+    flex: 1;
+    display: flex;
+    /* border: 3px solid red; */
+}
+
+.volume-control > i, .volume-control > #volume-slider {
+    /* border: 3px solid black;  */
+}
+
+.volume-control > i {
+    flex: 1;
+}
+
+.volume-control > #volume-slider {
+    flex: 9;
+    width: 100%;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: transparent;
+    outline: none;
+    opacity: 0.7;
+    cursor: pointer;
+
+
+}
+
+.player-right > .user-control i{
+    /* border: 3px solid black; */
+    text-align: right;
+    flex: 0 0 25%;
+}
+
+#progress-bar {
+    height: 0.5vh;
+    width: 55%;
+    background: var(--main-orange);
+
+    position: fixed;
+    bottom: 12vh;
+    z-index: 1;
+}
+
+/* https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider */
+#volume-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.5vh;
+  /* background: var(--main-orange); */
+}
+
+#volume-slider::-moz-range-track {
+  width: 100%;
+  height: 0.5vh;
+  background: var(--main-orange);
+}
+
+#volume-slider::-ms-track {
+  background: var(--main-orange);
+}
+
+/* FF */
+#volume-slider::-moz-range-progress {
+  width: 100%;
+  height: 0.5vh;
+  background-color: var(--main-orange); 
+}
+
+#volume-slider::-moz-range-track {  
+  width: 100%;
+  height: 0.5vh;
+  background-color: var(--main-grey);
+}
+
+/* IE*/
+#volume-slider::-ms-fill-lower {
+  width: 100%;
+  height: 0.5vh;
+  background-color: var(--main-grey); 
+}
+#volume-slider::-ms-fill-upper {  
+  width: 100%;
+  height: 0.5vh;
+  background-color: var(--main-orange);
+}
+
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1vh;
+  width: 1vh;
+  border-radius: 50%;
+  background: var(--main-orange);
+  margin-top: -0.25vh;
+}
+
+/* All the same stuff for Firefox */
+#volume-slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1vh;
+  width: 1vh;
+  border-radius: 50%;
+  background: var(--main-orange);
+  margin-top: -0.25vh;
+  outline: none;
+  border: none;
+}
+
+/* All the same stuff for IE */
+#volume-slider::-ms-thumb {
+  -webkit-appearance: none;
+  height: 1vh;
+  width: 1vh;
+  border-radius: 50%;
+  background: var(--main-orange);
+  margin-top: -0.25vh;
 }
