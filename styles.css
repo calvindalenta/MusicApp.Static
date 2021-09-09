@@ -27,6 +27,14 @@ p {
     font-size: 1.5rem;
 }
 
+.fa-play-circle {
+    color: var(--main-orange);
+}
+
+.fa-redo, .fa-backward, .fa-forward, .fa-random {
+    color: lightgrey;
+}
+
 header {
     display: flex;
     width: 100%;
@@ -265,9 +273,9 @@ section > div {
 
 .trending-box > i {
     flex: 1.5;
-    color: var(--main-orange);
     /* border: 3px solid red; */
 }
+
 
 .trending-text {
     flex: 8;
@@ -336,6 +344,65 @@ section > div {
 }
 
 .popular-followers {
+    color: lightgrey;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 12.5vh;
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.player-left, .player-middle, .player-right {
+    flex: 1;
+    border: 3px solid lightgreen;
+}
+
+.player-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.player-left {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin-left: 2%;
+    /* background-color: lightgrey; */
+}
+
+.player-left > img {
+    flex: 1.5;
+    max-width: 10%;
+    height: 10%;
+    border-radius: 5%;
+    /* border: 3px solid red; */
+}
+
+
+.player-left-text {
+    flex: 8;
+    /* border: 3px solid red; */
+}
+
+.player-left > .timestamp {
+    flex: 2;
+    color: lightgrey;
+    /* border: 3px solid red; */
+}
+
+.player-left-text, .timestamp {
+    font-weight: bold;
+}
+
+.player-left-text > .description {
     color: lightgrey;
     font-size: 1.2rem;
 }
