@@ -3,6 +3,7 @@ footer {
     bottom: 0;
     height: 12.5vh;
     width: 100%;
+    background-color: white;
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -12,6 +13,12 @@ footer {
         /* border: 3px solid lightgreen; */
     }
 
+}
+
+@media screen and (max-width: 425px) {
+    footer, #progress-bar {
+        display: none;
+    }
 }
 
 .player-middle {

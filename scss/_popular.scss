@@ -42,4 +42,16 @@
     }
 }
 
+@media screen and (max-width: 425px) {
+    .popular-container {
+        width: 100%;
+        gap: 1%;
+        height: 80%;
+    }
+
+    .popular-box {
+        padding: 2vh 0;  
+    }
+}
+
 

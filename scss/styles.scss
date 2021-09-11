@@ -20,6 +20,19 @@ $primary-grey: #f9f9fb;
     font-family: 'Urbanist', sans-serif;
 }
 
+@media screen and (max-width: 1024px) {
+    * {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0 5%;
+    }
+}
+
+
 img {
     max-width: 100%;
     /* max-height: 100%; */
