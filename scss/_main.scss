@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    height: 70vh;
+
+    nav {
+        flex: 1;
+        height: 100%;
+        /* background-color: red; */
+    }
+
+    .main-section {
+        flex: 4;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 50% 50%;
+        gap: 5%;
+    }
+}
+
+.main-section section {
+    /* border: 3px solid green; */
+}
+
+.main-section h2 {
+    /* margin: 0 0 3% 0; */
+}
+/* 
+section > div {
+    background-color: green;
+} */
